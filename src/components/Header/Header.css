@@ -7,7 +7,7 @@
  
 }
 .link-style{
-  margin-left:57%;
+  /* margin-left:55%; */
 }
 .link-style a{
   color: black;
@@ -20,4 +20,17 @@
 .link-style a:hover{
   color: lightcoral;
 
+}
+.logout-style{
+    color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+  text-decoration: none;
+  text-align:start;
+  border: none;
+  background-color:burlywood;
+}
+.logout-style:hover{
+  color: lightcoral;
 }

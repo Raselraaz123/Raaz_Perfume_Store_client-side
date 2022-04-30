@@ -1,10 +1,19 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 import logo from '../../img/icon/perfume.png'
 import './Header.css'
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+
+  const handleLogout = () => {
+    signOut(auth)
+  }
+
   return (
     <div className="full sticky-top">
       <Navbar
@@ -30,9 +39,12 @@ const Header = () => {
               <Link to="/inventore">Inventore Item</Link>
 
               <Link to="/about">About us</Link>
-              <Link eventKey={2} to="/login">
-                Login
-              </Link>
+              <Link to="/blog">Blog</Link>
+              {user ? (
+                <button onClick={handleLogout} className='logout-style'>Logout</button>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
