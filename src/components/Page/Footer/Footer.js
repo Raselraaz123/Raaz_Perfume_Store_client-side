@@ -30,7 +30,7 @@ const Footer = () => {
           <p>Return</p>
         </div>
       </div>
-      <div className="footer-bottom-container">
+      <div className="footer-bottom-container mt-5">
         <p className="text-center">
           Copyright © {year} Raaz . All rights reserved
         </p>
