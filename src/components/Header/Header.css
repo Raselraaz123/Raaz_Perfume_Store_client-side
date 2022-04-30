@@ -1,0 +1,17 @@
+.toggle-style{
+  background-color: black;
+ 
+}
+.link-style{
+  margin-left:50%;
+}
+.link-style a{
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.link-style a:hover{
+  color: lightcoral;
+
+}
