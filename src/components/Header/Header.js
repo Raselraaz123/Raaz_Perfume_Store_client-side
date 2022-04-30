@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
   return (
     <Navbar
-      className="shadow-lg mt-2"
+      className="shadow-lg  w-100"
       collapseOnSelect
       expand="lg"
       bg="text-dark"
