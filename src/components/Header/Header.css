@@ -10,6 +10,8 @@
   font-size: 18px;
   font-weight: 600;
   margin-left: 20px;
+  text-decoration: none;
+  text-align:start;
 }
 .link-style a:hover{
   color: lightcoral;
