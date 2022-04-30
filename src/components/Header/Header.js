@@ -6,36 +6,38 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <Navbar
-      className="shadow-lg  w-100"
-      collapseOnSelect
-      expand="lg"
-      bg="text-dark"
-      variant=""
-    >
-      <Container>
-        <Navbar.Brand to="/home">
-          <Link to="/home">
-            <img className="rounded" height={50} src={logo} alt="" />
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          className="toggle-style"
-        />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="link-style  me-auto">
-            <Link to="/">Home</Link>
-            <Link to="/inventore">Inventore Item</Link>
-
-            <Link to="/about">About us</Link>
-            <Link eventKey={2} to="/login">
-              Login
+    <div className="full sticky-top">
+      <Navbar
+        className="nav-style shadow-lg  w-100 sticky  "
+        collapseOnSelect
+        expand="lg"
+        bg="text-dark"
+        variant=""
+      >
+        <Container>
+          <Navbar.Brand to="/home">
+            <Link to="/home">
+              <img className="rounded" height={50} src={logo} alt="" />
             </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="toggle-style"
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="link-style  me-auto">
+              <Link to="/">Home</Link>
+              <Link to="/inventore">Inventore Item</Link>
+
+              <Link to="/about">About us</Link>
+              <Link eventKey={2} to="/login">
+                Login
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
 };
 
