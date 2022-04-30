@@ -1,23 +1,28 @@
+import { ArrowNarrowRightIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
-import './Login.css'
 import { Link, useNavigate } from 'react-router-dom';
-const Login = () => {
+
+const Register = () => {
+
+
+
   const navigate = useNavigate();
 
-
-
-
-  const navigateRegister = event => {
-    navigate("/register")
+  const navigateLogin = event => {
+    navigate('/login')
   }
   return (
     <div className="w-50 mx-auto mt-4">
       <h1 className="text-center">
-        Please <span className='title-style'>Login</span>
+        Please <span className="title-style"> Register</span>
       </h1>
       <Form>
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter Name" />
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -32,15 +37,21 @@ const Login = () => {
           variant="primary"
           type="submit"
         >
-          Login <ArrowNarrowRightIcon className="icon-style text-blue-500" />
+          Register <ArrowNarrowRightIcon className="icon-style text-blue-500" />
         </Button>
       </Form>
-      <p className='mt-3' >First time come our website ? <Link
-        className='text-decoration-none'
-        onClick={navigateRegister}
-        to='/register'>Please Register</Link></p>
+      <p className="mt-3">
+        Already have a account ?{" "}
+        <Link
+          className="text-decoration-none"
+          onClick={navigateLogin}
+          to="/login"
+        >
+          Please login
+        </Link>
+      </p>
     </div>
   );
 };
 
-export default Login;
+export default Register;
