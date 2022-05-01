@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import facebook from '../../../img/social_icon/facebook.png'
 import google from '../../../img/social_icon/google.png'
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Footer.css'
 const Footer = () => {
   const today = new Date();
@@ -17,9 +18,8 @@ const Footer = () => {
           <p>Tables</p>
           <p>Dining</p>
         </div>
-        <div className='social-icon-style'>
-          <img src={facebook} alt="" />
-          <img src={google} alt="" />
+        <div>
+          <SocialLogin></SocialLogin>
         </div>
         <div>
           <h5>INFORMATION</h5>

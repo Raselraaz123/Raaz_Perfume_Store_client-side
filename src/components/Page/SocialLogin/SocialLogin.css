@@ -1,0 +1,14 @@
+.btn-container{
+  margin:0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.facebook-style{
+  border: none;
+ padding: 0 40px;
+}
+.google-style{
+  border: none;
+   padding: 0 40px;
+}

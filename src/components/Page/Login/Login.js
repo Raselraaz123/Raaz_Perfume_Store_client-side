@@ -8,6 +8,8 @@ import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import SocialLogin from '../SocialLogin/SocialLogin';
+import Or from '../Or/Or';
   
 
 
@@ -120,6 +122,8 @@ const Login = () => {
           Reset Password
         </button>
       </p>
+<Or></Or>
+      <SocialLogin></SocialLogin>
       <ToastContainer />
     </div>
   );
