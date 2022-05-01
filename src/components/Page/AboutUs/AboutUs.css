@@ -1,0 +1,17 @@
+.about-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.img-style{
+  display: flex;
+  justify-content: center;
+}
+.title{
+  font-size: 30px;
+  font-family: fantasy;
+  font-style: italic;
+ 
+}
+.font-size{
+  font-size: 25px;
+}
