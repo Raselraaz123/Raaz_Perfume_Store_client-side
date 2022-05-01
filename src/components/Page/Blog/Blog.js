@@ -3,8 +3,8 @@ import './Blog.css'
 const Blog = () => {
   return (
     <div className="blog-container">
-      <article>
-        <h3 className="mt-5">Difference between Javascript & NodeJS</h3>
+      <article className="bg-color-top mt-5">
+        <h3 className="">Difference between Javascript & NodeJS</h3>
         <p>JavaScript : </p>
         <small>
           Javascript is a Scripting language. It is mostly abbreviated as JS. It
@@ -49,7 +49,7 @@ const Blog = () => {
           </li>
         </small>
       </article>
-      <article>
+      <article className="bg-color-mid">
         <h3 className="mt-5">Difference between SQL and NoSQL</h3>
         <p>
           The databases in SQL are table-based, while the databases in NoSQL are
@@ -95,7 +95,7 @@ const Blog = () => {
           </li>
         </p>
       </article>
-      <article>
+      <article className="bg-color-btom">
         <h3>What is JWT</h3>
         <p>
           JWT, or JSON Web Token, is an open standard(RFC 7519) set of claims to
@@ -130,7 +130,7 @@ const Blog = () => {
           secret that is known to both the issuer and receiver, or with a
           private key known only to the sender. When the token is used, the
           receiving party verifies that the header and payload match the
-          signature.{" "}
+          signature.
         </small>
       </article>
     </div>

@@ -1,0 +1,7 @@
+.inventore-item-container{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}

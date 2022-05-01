@@ -1,21 +1,13 @@
 import React from 'react';
+import './AllPerfume.css'
 
-
-const HomePageProduct = ({ perfume }) => {
-  const {
-    _id,
-    Quantity,
-    name,
-    picture,
-    price,
-    shortDescripttion,
-    supplierName,
-  } = perfume;
-
+const AllPerfume = ({ perfume }) => {
+  const {_id,Quantity,name,picture,price,shortDescripttion,supplierName}=perfume
+  console.log(perfume);
   return (
     <div className="perfume-container">
       <img height={250} src={picture} alt="" />
-      <div className="artical-area">
+      <div className='artical-area'>
         <h4>Name :{name}</h4>
         <h5>supplier : {supplierName}</h5>
         <p>
@@ -32,4 +24,4 @@ const HomePageProduct = ({ perfume }) => {
   );
 };
 
-export default HomePageProduct;
+export default AllPerfume;

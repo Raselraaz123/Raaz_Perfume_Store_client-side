@@ -2,3 +2,33 @@
   width: 90%;
   margin: 0 auto;
 }
+.bg-color-top{
+background-color: rgba(33, 79, 81, 0.994);
+color: white;
+padding: 20px;
+border-radius: 10px;
+
+}
+.bg-color-top:hover{
+box-shadow:10px 10px 10px 10px rgb(65, 62, 62);
+}
+.bg-color-mid{
+background-color: rgb(68, 33, 101);
+color: white;
+padding: 20px;
+margin-top: 30px;
+border-radius: 10px;
+}
+.bg-color-mid:hover{
+box-shadow:10px 10px 10px 10px rgb(65, 62, 62);
+}
+.bg-color-btom{
+background-color: rgb(72, 68, 11);
+color: white;
+padding: 20px;
+margin-top: 30px;
+border-radius: 10px;
+}
+.bg-color-btom:hover{
+box-shadow:10px 10px 10px 10px rgb(65, 62, 62);
+}

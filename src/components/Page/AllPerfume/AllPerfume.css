@@ -1,0 +1,13 @@
+.perfume-container{
+/* border: 1px solid pink; */
+border-radius: 8px;
+ 
+}
+.perfume-container:hover{
+box-shadow:10px 10px 10px 10px rgb(180, 170, 170);
+}
+
+.artical-area{
+ padding: 20px;
+ text-align: justify;
+}
