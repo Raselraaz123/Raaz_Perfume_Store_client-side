@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import AboutUs from './components/Page/AboutUs/AboutUs';
+import AllPerfumeDetail from './components/Page/AllPerfumeDetail/AllPerfumeDetail';
 import Blog from './components/Page/Blog/Blog';
 import Footer from './components/Page/Footer/Footer';
 import Home from './components/Page/Home/Home';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/inventore" element={<InventoreItem></InventoreItem>}></Route>
+       <Route path='/AllPerfume/:perfumeId' element={<AllPerfumeDetail></AllPerfumeDetail>}></Route>
         <Route path="/about" element={<AboutUs></AboutUs>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const HomePageProduct = ({ perfume }) => {
+
+  const navigate = useNavigate();
+
+  const handleToPerfumeDetail = (id) => {
+    navigate(`/AllPerfume/${id}`);
+  };
+
+
   const {
     _id,
     Quantity,
@@ -27,6 +36,12 @@ const HomePageProduct = ({ perfume }) => {
         <h5>
           Price: $ <span>{price}</span>
         </h5>
+        <button
+          onClick={() => handleToPerfumeDetail(_id)}
+          className="btn btn-primary bton-posi"
+        >
+          By Now
+        </button>
       </div>
     </div>
   );

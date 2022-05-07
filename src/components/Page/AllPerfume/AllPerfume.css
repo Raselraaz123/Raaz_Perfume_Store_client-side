@@ -1,6 +1,8 @@
 .perfume-container{
 /* border: 1px solid pink; */
 border-radius: 8px;
+ position: relative;
+ height: 650px;
  
 }
 .perfume-container:hover{
@@ -10,4 +12,13 @@ box-shadow:10px 10px 10px 10px rgb(180, 170, 170);
 .artical-area{
  padding: 20px;
  text-align: justify;
+}
+.bton-posi{
+  width: 100%;
+  margin-left: -20px;
+font-size: 18px;
+font-weight: 600;
+position: absolute;
+bottom: 0;
+
 }
