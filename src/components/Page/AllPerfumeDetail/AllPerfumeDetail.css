@@ -1,6 +1,10 @@
 .prefume-Detail-container{
   width: 90%;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.5fr 1.5fr;
   margin: 30px auto;
+}
+.bg-color{
+  background-color: cornsilk;
+  padding: 10px;
 }
