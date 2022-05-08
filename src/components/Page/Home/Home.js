@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import usePerfume from '../../../hooks/usePerfume';
 import useReview from '../../../hooks/useReview';
 import Carousel from '../Carousel/Carousel';
@@ -11,6 +12,11 @@ const Home = () => {
   const [perfumes, setPerfumes] = usePerfume();
   const [reviews, setReviews] = useReview();
   const last6 = perfumes.slice(19, 25);
+  const navigate = useNavigate();
+
+  const handleManageInventories = () => {
+    navigate('/manageInventories')
+  }
   return (
     <div>
       <Carousel></Carousel>
@@ -22,9 +28,15 @@ const Home = () => {
           ></HomePageProduct>
         ))}
       </div>
+      <div className='btn-posi'>
+     
+        <button
+          onClick={handleManageInventories}
+          className="btn btn-info font-size">Manage Inventories</button>
+      </div>
       <NewCollection></NewCollection>
-      <h1 className='text-center mb-5'>The Latest Perfume Reviews</h1>
-      <div className='review-item'>
+      <h1 className="text-center mb-5">The Latest Perfume Reviews</h1>
+      <div className="review-item">
         {reviews.map((review) => (
           <HomePageReview key={review._id} review={review}></HomePageReview>
         ))}
