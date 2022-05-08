@@ -40,7 +40,7 @@ const HomePageProduct = ({ perfume }) => {
           onClick={() => handleToPerfumeDetail(_id)}
           className="btn btn-primary bton-posi"
         >
-          By Now
+        Update
         </button>
       </div>
     </div>

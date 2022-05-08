@@ -27,7 +27,7 @@ const AllPerfume = ({ perfume }) => {
         </h5>
         <button
         onClick={()=>handleToPerfumeDetail(_id)}
-          className='btn btn-primary bton-posi'>By Now</button>
+          className='btn btn-primary bton-posi'>Update</button>
       </div>
     </div>
   );
