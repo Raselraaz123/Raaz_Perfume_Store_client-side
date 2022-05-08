@@ -11,6 +11,7 @@ import InventoreItem from './components/Page/InventoreItem/InventoreItem';
 import Login from './components/Page/Login/Login';
 import NotFound from './components/Page/NotFound/NotFound';
 import Register from './components/Page/Register/Register';
+import RequierAuth from './components/Page/RequierAuth/RequierAuth';
 
 function App() {
   return (
@@ -19,8 +20,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/inventore" element={<InventoreItem></InventoreItem>}></Route>
-       <Route path='/AllPerfume/:perfumeId' element={<AllPerfumeDetail></AllPerfumeDetail>}></Route>
+        <Route
+          path="/inventore"
+          element={<InventoreItem></InventoreItem>}
+        ></Route>
+        <Route
+          path="/AllPerfume/:perfumeId"
+          element={
+            <RequierAuth>
+              <AllPerfumeDetail></AllPerfumeDetail>
+            </RequierAuth>
+          }
+        ></Route>
         <Route path="/about" element={<AboutUs></AboutUs>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
