@@ -30,7 +30,7 @@ const ManageInventories = () => {
   
   return (
     <div>
-      <h1 className="text-center m-5"> Manage inventories </h1>
+      <h1 className="text-center posi"> Manage inventories </h1>
       <div className="inventore-item-container">
         {perfumes.map((perfume) => (
           <ManageInventoriesItem
