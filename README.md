@@ -1,3 +1,20 @@
+# Raaz Perfume Store
+
+## [our website link](https://raaz-perfumes-store.web.app/)
+
+### [server side code link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Raselraaz123)
+
+- Many types of technology are used in this website so that a user gets a good experience
+
+- Some of the technologies are named below
+
+- firebase
+- mongodb
+- react
+- react-bootstrap
+- react-firebase-hooks
+- react-hook-form
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

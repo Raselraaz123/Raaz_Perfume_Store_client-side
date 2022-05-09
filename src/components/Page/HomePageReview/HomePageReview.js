@@ -4,7 +4,7 @@ import './HomePageReview.css'
 
 const HomePageReview = ({ review }) => {
   const {name,img,picture,reviews,reviews_des}=review
-  console.log(review)
+ 
   return (
     <div>
       <Card className="review-container">
