@@ -9,7 +9,7 @@ const ManageInventories = () => {
   const [perfumes, setPerfumes] = usePerfume()
   const navigate = useNavigate();
   
-    const handleDelete = (id) => {
+    const handleDelete = id => {
       const proceed = window.confirm("Are you sure this item delete?");
       if (proceed) {
         const url = `https://peaceful-crag-68907.herokuapp.com/perfume/${id}`;

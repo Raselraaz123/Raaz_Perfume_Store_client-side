@@ -40,8 +40,17 @@ const Header = () => {
 
               <Link to="/about">About us</Link>
               <Link to="/blog">Blog</Link>
+              {user && (
+                <>
+                  <Link to="/addItem">Add </Link>
+                  <Link to="/manageInventories">Manage </Link>
+                  <Link to="/myItem">My Item </Link>
+                </>
+              )}
               {user ? (
-                <button onClick={handleLogout} className='logout-style'>Logout</button>
+                <button onClick={handleLogout} className="logout-style">
+                  Logout
+                </button>
               ) : (
                 <Link to="/login">Login</Link>
               )}

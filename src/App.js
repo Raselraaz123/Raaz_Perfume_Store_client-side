@@ -11,6 +11,7 @@ import Home from './components/Page/Home/Home';
 import InventoreItem from './components/Page/InventoreItem/InventoreItem';
 import Login from './components/Page/Login/Login';
 import ManageInventories from './components/Page/ManageInventories/ManageInventories';
+import MyItem from './components/Page/MyItem/MyItem';
 import NotFound from './components/Page/NotFound/NotFound';
 import Register from './components/Page/Register/Register';
 import RequierAuth from './components/Page/RequierAuth/RequierAuth';
@@ -34,11 +35,32 @@ function App() {
             </RequierAuth>
           }
         ></Route>
-        <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
-        
         <Route path="/about" element={<AboutUs></AboutUs>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path='/addItem' element={<AddItem></AddItem>}></Route>
+        <Route
+          path="/manageInventories"
+          element={
+            <RequierAuth>
+              <ManageInventories></ManageInventories>
+            </RequierAuth>
+          }
+        ></Route>
+        <Route
+          path="/myItem"
+          element={
+            <RequierAuth>
+              <MyItem></MyItem>
+            </RequierAuth>
+          }
+        ></Route>
+        <Route
+          path="/addItem"
+          element={
+            <RequierAuth>
+              <AddItem></AddItem>
+            </RequierAuth>
+          }
+        ></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

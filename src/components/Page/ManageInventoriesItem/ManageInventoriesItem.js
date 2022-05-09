@@ -21,6 +21,7 @@ const ManageInventoriesItem = ({ perfume, handleDelete }) => {
       <p>
         <small>{shortDescripttion}</small>
       </p>
+      <h5>Quantity : {Quantity}</h5>
       <h4> price : {price}</h4>
       <button
         onClick={() => handleDelete(perfume._Id)}
