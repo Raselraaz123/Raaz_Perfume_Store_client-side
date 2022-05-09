@@ -6,3 +6,14 @@
   gap: 30px;
   
 }
+@media only screen and (max-width:480px) {
+  .inventore-item-container{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+  
+}
+  
+}

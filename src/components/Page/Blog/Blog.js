@@ -2,7 +2,7 @@ import React from 'react';
 import './Blog.css'
 const Blog = () => {
   return (
-    <div className="blog-container">
+    <div className="blog-container posi">
       <article className="bg-color-top mt-5">
         <h3 className="">Difference between Javascript & NodeJS</h3>
         <p>JavaScript : </p>

@@ -70,7 +70,7 @@ const Login = () => {
 
 
   return (
-    <div className="w-50 mx-auto mt-4">
+    <div className="w-50 mx-auto posi">
       <h1 className="text-center">
         Please <span className="title-style">Login</span>
       </h1>
@@ -122,7 +122,7 @@ const Login = () => {
           Reset Password
         </button>
       </p>
-<Or></Or>
+      <Or></Or>
       <SocialLogin></SocialLogin>
       <ToastContainer />
     </div>

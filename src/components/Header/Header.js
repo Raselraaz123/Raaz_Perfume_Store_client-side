@@ -15,9 +15,9 @@ const Header = () => {
   }
 
   return (
-    <div className="full sticky-top">
+    <div className="full navbar navbar-expand-md fixed-top  p-0 ">
       <Navbar
-        className="nav-style shadow-lg  w-100 sticky  "
+        className="nav-style shadow-lg  w-100   "
         collapseOnSelect
         expand="lg"
         bg="text-dark"

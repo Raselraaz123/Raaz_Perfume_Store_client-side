@@ -9,7 +9,7 @@ const InventoreItem = () => {
   return (
     <div>
  
-      <h2 className='text-center mt-5 mb-4'>Perfume item</h2>
+      <h2 className='text-center posi'>Perfume item</h2>
       <div className="inventore-item-container">
         {perfumes.map((perfume) => (
           <AllPerfume key={perfume._id} perfume={perfume}></AllPerfume>

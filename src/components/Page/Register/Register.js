@@ -52,24 +52,39 @@ const Register = () => {
 
 
   return (
-    <div className="w-50 mx-auto mt-4">
+    <div className="w-50 mx-auto posi">
       <h1 className="text-center">
         Please <span className="title-style"> Register</span>
       </h1>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
-          <Form.Control onBlur={handleName} type="text" placeholder="Enter Name" required/>
+          <Form.Control
+            onBlur={handleName}
+            type="text"
+            placeholder="Enter Name"
+            required
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" required />
+          <Form.Control
+            onBlur={handleEmail}
+            type="email"
+            placeholder="Enter email"
+            required
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required/>
+          <Form.Control
+            onBlur={handlePassword}
+            type="password"
+            placeholder="Password"
+            required
+          />
         </Form.Group>
         <Button
           className="w-50 mx-auto d-flex btn-font-style"

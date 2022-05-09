@@ -3,7 +3,7 @@ import store from '../../../img/store/perfumes_shop.jpg'
 import './AboutUs.css'
 const AboutUs = () => {
   return (
-    <div className="about-container">
+    <div className="about-container posi">
       <article className="mt-5">
         <h3 className="text-center title">About us</h3>
         <div className="img-style">
