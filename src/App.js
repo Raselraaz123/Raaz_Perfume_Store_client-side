@@ -17,6 +17,7 @@ import Register from './components/Page/Register/Register';
 import RequierAuth from './components/Page/RequierAuth/RequierAuth';
 
 function App() {
+  // app.js is main
   return (
     <div>
       <Header></Header>
