@@ -2,7 +2,7 @@
 
 ## [our website link](https://raaz-perfumes-store.web.app/)
 
-### [server side code link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Raselraaz123)
+### [server side code link](https://github.com/Raselraaz123/Raaz_Perfume_Store_server_side)
 
 - Many types of technology are used in this website so that a user gets a good experience
 
